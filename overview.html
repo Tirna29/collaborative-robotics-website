@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <title>Overview</title>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav>
+      <ul>
+        <li>
+          <!-- the home button has been taken from font awesome -->
+          <a href="index.html"><i class="fas fa-home"></i></a>
+        </li>
+        <li class="current"><a href="overview.html">Overview</a></li>
+        <li><a href="evaluation.html">Evaluation & Trends</a></li>
+        <li><a href="applications.html">Applications</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- site banner -->
+    <div class="banner-container">
+      <div class="banner-text">Collaborative Robotics</div>
+      <img
+        src="assets/images/banner-image-desktop.png"
+        alt="banner mobile"
+        class="banner-image">
+    </div>
+
+    <!--  content -->
+    <h2 class="format-h2">Overview</h2>
+
+    <div class="overview">
+      <img
+        src="assets/images/engineer-with-robot-arm-desktop.png"
+        alt="engineer working with robot arm"
+        class="robot-arm">
+
+      <div>
+        <p>
+          Collaborative robots, commonly referred to as Cobots, are a unique
+          segment of robotic automation primarily designed for safety. Unlike
+          their industrial robot counterparts, they boast rounded edges, force
+          limitations, and lightweight designs
+          <a href="works-cited.html#ref3">[3]</a>. These robots use an array of
+          sensors that help them avoid collisions with humans. In the event of
+          unexpected contact, safety protocols ensure that the cobots are
+          promptly shut down.
+        </p>
+        <p>
+          These robots are not just built for safety but are also developed to
+          operate seamlessly alongside human workers within a shared workspace.
+          This is due to advancements in touch technology, artificial
+          intelligence, mobile technology, computer vision, and cognitive
+          computing. These innovations enable these relatively small and less
+          power-intensive robots to be fully aware of their environment. They
+          can safely perform various tasks close to humans and can also rapidly
+          acquire new tasks through techniques like demonstration and
+          reinforcement learning.
+        </p>
+        <p>
+          Typically, the division of labor sees cobots handling repetitive and
+          mundane tasks, leaving more intricate and mentally demanding jobs to
+          their human counterparts. Such an arrangement is beneficial for both.
+          While the cobot ensures accuracy, uptime, and repeatability, the human
+          worker offers intelligence and superior problem-solving capabilities
+          <a href="works-cited.html#ref3">[3]</a>.
+        </p>
+
+        <p>
+          The realm of possible applications for these cobots is vast, ranging
+          from manufacturing-related functions like assembly line support,
+          packaging automation, and product quality control to sectors like
+          healthcare and education. As industries begin to recognize the
+          economic advantages of integrating cobots, the market for them is
+          poised for substantial growth. This growth is further propelled by the
+          current shortage of skilled labor and the escalating costs associated
+          with human workers <a href="works-cited.html#ref3">[3]</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="video-with-text">
+      <p>Here is a video on the differences between a COBOT and a ROBOT:</p>
+      <iframe
+        class="video"
+        width="350"
+        height="315"
+        src="https://www.youtube.com/embed/aRx20DTTQ2M?si=lFQZ5W7j5UckW8Lc&autoplay=1&mute=1">
+      </iframe>
+    </div>
+
+    <h2 class="format-h2">Cobot Design Principles</h2>
+    <div class="design-priciples">
+      <figure class="hand-gestures-figure">
+        <img
+          src="assets/images/hand-gestures.png"
+          alt="hand gestures"
+          class="hand-gestures">
+        <figcaption class="hand-gestures-caption">
+          Figure 1: An example of a gesture lexicon <a href="works-cited.html#ref4">[4]</a>.
+        </figcaption>
+      </figure>
+      <div>
+        <p>
+          Designing cobots involves creating a collaboration between robots and
+          humans. This gives the cobots an understanding of their environment
+          and equips them with actions that achieve a collaborative goal.
+          Zaatari et al (2019) state the main components of a cobot design:
+        </p>
+        <ol class="line">
+          <li>
+            <b>Learning</b>: Cobots learn skills in a manner akin to humans,
+            utilizing trial and error, observation, feedback, and posing
+            questions <a href="works-cited.html#ref4">[4]</a>.
+            <ul>
+              <li>
+                <b>Offline</b>: The programmer designs the learning algorithm
+                and offers initial data, which could be demonstrations or
+                training sets, for the cobot to learn from.
+              </li>
+              <li>
+                <b>Online</b>: The operator can directly influence the cobot's
+                learning by providing feedback, personalized demonstrations, or
+                answers to the robot's queries. Additionally, the operator can
+                indirectly affect the cobot's learning by being a part of its
+                observed environment.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Communication</b>: Communication can be both verbal (speech) or
+            non-verbal, including gestures as shown in Figure 1, gaze, haptics,
+            head pose, and user interfaces
+            <a href="works-cited.html#ref4">[4]</a>.
+            <ul>
+              <li>
+                <b>Offline</b>: The programmer sets up and defines potential
+                cobot actions and the fundamental motion control. This is
+                referred to as the Traditional role.
+              </li>
+              <li>
+                <b>Online</b>: The operator explicitly communicates with the
+                cobot in real-time, directing it towards predefined actions.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <b>Optimization</b>: The optimization aims to minimize factors like
+            operator workload, energy consumption, and time, while maximizing
+            elements like comfort, trust, and product quality. This method often
+            results in better performance compared to human-only operation
+            <a href="works-cited.html#ref4">[4]</a>.
+            <ul>
+              <li>
+                <b>Offline</b>: The programmer crafts cost functions and
+                optimization algorithms. They model essential aspects of the
+                cobot's environment, like obstacles and tool positions, based on
+                the robot's actions.
+              </li>
+              <li>
+                <b>Online</b>: During operation, the cobot's performance is
+                implicitly influenced by the operator, who becomes part of its
+                cost function.
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <p>
+          In contrast to traditional industrial robot programming, where a robot
+          functions deterministically and without human-awareness, Human-Robot
+          Collaboration (HRC) introduces unpredictability due to human
+          involvement. This dynamic requires cobots to adapt and respond in
+          real-time, making the above features critical for effective
+          collaboration.
+        </p>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-content">
+        <a href="contactus.html">Contact Us</a>
+        <a href="works-cited.html">Works Cited</a>
+      </div>
+    </footer>
+  </body>
+</html>

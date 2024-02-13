@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <title>Applications</title>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav>
+      <ul>
+        <li>
+          <!-- the home button has been taken from font awesome -->
+          <a href="index.html"><i class="fas fa-home"></i></a>
+        </li>
+        <li><a href="overview.html">Overview</a></li>
+        <li><a href="evaluation.html">Evaluation & Trends</a></li>
+        <li class="current"><a href="applications.html">Applications</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- site banner -->
+    <div class="banner-container">
+      <div class="banner-text">Collaborative Robotics</div>
+      <img
+        src="assets/images/banner-image-desktop.png"
+        alt="banner mobile"
+        class="banner-image">
+    </div>
+
+    <!--  content  -->
+
+    <h2 class="format-h2">Manufacturing</h2>
+
+    <p>
+      The contemporary manufacturing landscape is characterized by intricate
+      electro-mechanical systems, making today's production plants complex. This
+      complexity is not just inherent but also grows across the system's life
+      cycle phases, such as design, development, and operation. In response to
+      this, advancements in sensing technologies, virtualization, and computing
+      power have given rise to the concept of digital twins. A digital twin (DT)
+      is a real-time digital representation of a physical system that
+      facilitates testing and validation <a href="works-cited.html#ref5">[5]</a>.
+    </p>
+    <p>
+      Given the potential of DTs to manage system complexity across various
+      scientific domains, there has been a significant push to harness them in
+      addressing the manufacturing challenges created by the need for
+      decentralized and customization production controls. To meet these
+      challenges, there is a growing emphasis on the interplay between humans
+      and machines, with human-robot collaboration (HRC) using cobots emerging
+      as a pivotal aspect. HRC seeks to blend the unique strengths of humans and
+      robots—like dexterity, intelligence, and sensing—to accomplish tasks such
+      as assembly processes <a href="works-cited.html#ref5">[5]</a>. From a
+      design viewpoint, HRC embodies a multifaceted biomechatronic structure,
+      with design decisions heavily reliant on computer-aided simulation models
+      for validation and failure analysis.
+    </p>
+
+    <div class="manufacturing">
+      <figure class="application-figure">
+        <img
+          src="assets/images/digital-twin.png"
+          alt="digital twin in manufacturing"
+          class="digital-twin">
+        <figcaption class="application-caption">
+          Figure 1: Digital twins in HRC assembly <a href="works-cited.html#ref5">[5]</a>.
+        </figcaption>
+      </figure>
+      <div>
+        <p>
+          Bilberg et al (2019) delved into the advantages of DTs for HRC,
+          emphasizing skills distribution between humans and robots, optimizing
+          robot trajectories, workload balancing, and robot program generation,
+          especially in variant-oriented production contexts. The system
+          consists of four modules as shown in Figure 1.
+        </p>
+        <ul class="line">
+          <li>
+            <h3>Task Decomposition Engine</h3>
+            <p>
+              This module dissects product assembly into various tasks,
+              evaluating them based on physical attributes and assembly traits.
+              Tasks are scored for their automation suitability, categorizing
+              them as manual or robotic.
+            </p>
+          </li>
+
+          <li>
+            <h3>Assembly Task Library</h3>
+            <p>
+              Comprising function-blocks representing assembly tasks, it
+              connects to an event-based human and robot simulation mirroring
+              the actual production system. The simulation, with predefined key
+              positions, generates operational plans and estimated cycle times,
+              facilitating efficient robot program development.
+            </p>
+          </li>
+
+          <li>
+            <h3>Decision Engine</h3>
+            <p>
+              Receiving simulation data, this module allocates resources for
+              balanced production scheduling and crafts a control program.
+            </p>
+          </li>
+
+          <li>
+            <h3>Control Interface</h3>
+            <p>
+              This module executes the robot program and communicates task
+              instructions to the operator via an interactive display.
+            </p>
+          </li>
+        </ul>
+        <p>
+          By leveraging the power of digital twins in human-robot collaboration,
+          modern manufacturing can address its complexities and drive
+          productivity to new heights.
+        </p>
+      </div>
+    </div>
+
+    <h2 class="format-h2">Healthcare</h2>
+    <div class="health">
+      <figure class="application-figure">
+        <img
+          src="assets/images/charmie.png"
+          alt="charmie in healthcare"
+          class="charmie">
+        <figcaption class="application-caption">
+          Figure 2: Charmie COBOT <a href="works-cited.html#ref6">[6]</a>.
+        </figcaption>
+      </figure>
+
+      <div>
+        <p>
+          As the global population ages, a spike in life expectancy brings forth
+          three prominent challenges: a surge in the elderly demographic,
+          escalating cognitive and physical challenges among them, and a rise in
+          single-person households. There is an escalating need for effective
+          elderly care solutions, such as healthcare service robots and
+          assistive technologies.
+        </p>
+        <p>
+          Ribeiro et al (2021) introduced CHARMIE (Collaborative Healthcare/Home
+          Assistant Robot by Minho Industrial Electronics)
+          <a href="works-cited.html#ref6">[6]</a>. This anthropomorphic robot, as
+          shown in Figure 2, is tailored for both healthcare and domestic
+          environments. Unlike other robots, CHARMIE is unique in its machine
+          learning capabilities, allowing it to learn and refine tasks via
+          direct interaction and observation. CHARMIE boasts a suite of
+          functionalities: dynamic obstacle detection, safe navigation,
+          human-robot interaction systems, and domestic object manipulation
+          <a href="works-cited.html#ref6">[6]</a>. The robot handles tasks in
+          nursing homes, homes, and healthcare facilities, ranging from fall
+          detection to setting up tables. CHARMIE’s design promises a future
+          where the elderly can lead more independent, healthier lives. Examples
+          of its adaptability include delivering food trays in hospitals,
+          transporting medicine in healthcare facilities, and assisting in
+          household chores <a href="works-cited.html#ref6">[6]</a>.
+        </p>
+
+        <p>Its versatility is showcased through tasks like:</p>
+
+        <ul class="space-items">
+          <li>Goods transportation and pick and place tasks.</li>
+          <li>
+            Following and communication with users through speech and visual
+            cues.
+          </li>
+          <li>Navigating and recognizing objects in its environment.</li>
+          <li>
+            Assisting users in tasks they might find challenging on their own.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="format-h2">Education</h2>
+    <div class="education">
+      <figure class="application-figure">
+        <img
+          src="assets/images/education-desktop.png"
+          alt="cobot in education"
+          class="edu"
+        >
+        <figcaption class="application-caption">
+          Figure 3: Structure of e-learning system with tutor robot <a href="works-cited.html#ref7">[7]</a>.
+        </figcaption>
+      </figure>
+
+      <div>
+        <p>
+          Higher education institutions are increasingly incorporating active
+          learning with elements of group discussion. The goal is to foster
+          problem identification and resolution skills, preparing students for
+          the global workforce. Traditional education modes are evolving, where
+          learners initially use an e-Learning platform like MOOC for content
+          comprehension and subsequently engage in classroom group discussions
+          to apply their knowledge. This e-Learning paradigm is also witnessing
+          the integration of cobots to enhance the learning experience. The
+          development of social, autonomous robots capable of human-like
+          interactions including gestures, body language, facial expressions,
+          and touch hold promise for the education sector.
+        </p>
+
+        <p>
+          The study by Tojo et al presents a collaborative e-Learning system
+          where the entire learning process occurs in a remote environment,
+          accessed by learners via the Internet. The challenge lies in ensuring
+          a realistic learning experience and fostering engagement during group
+          discussions. A collaborative robot named Interactive Tutor Robot (ITR)
+          was introduced to enhance interactions. The primary focus was to
+          analyze the impact of the robot's gestures on learners, evaluated
+          through experimental observations and semantic differential (SD)
+          assessments.
+        </p>
+
+        <p>
+          The e-Learning environment, as shown in Figure 3, consists of an ITR
+          and a notebook computer connected to the Internet. The computer shows
+          the e-Learning content, while the ITR facilitates the learning
+          process. Individual learning can be distinguished with a single unit
+          as 1st-level individual learning and group learning with multiple
+          units as 2nd-level group learning
+          <a href="works-cited.html#ref7">[7]</a>. The latter is referred to as a
+          collaborative e-Learning system for distinction.
+        </p>
+        <p class="p-before-list">In this model:</p>
+        <ul class="space-in-list">
+          <li>
+            <strong>Interaction</strong> is between the ITR and student, where
+            learning support information is exchanged and understanding gauged.
+          </li>
+          <li>
+            <strong>Communication</strong> occurs between multiple ITRs, sharing
+            and accumulating learning support data.
+          </li>
+          <li>
+            <strong>Collaborative learning</strong> happens between learners. In
+            the 1st-level, it's mostly individual study, while in the 2nd-level,
+            learners collaborate, applying knowledge, sharing insights, and
+            refining skills. Unlike traditional group learning where learners
+            congregate, in our system, they use ITRs as avatars for virtual
+            group learning.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="p-before-list">The communication mechanism involves:</p>
+    <ul class="space-in-list">
+      <li>
+        <strong>From ITR to Learner</strong>: Sounds and sound effects, and
+        visual gestures facilitated by robot actuators for movement and audio
+        functionality.
+      </li>
+      <li>
+        <strong>From Learner to ITR</strong>: Visual cues like facial
+        expressions, voice, and tactile feedback by touching the robot. The ITR
+        is equipped with cameras for sight, microphones for sound, and touch
+        sensors for tactile feedback.
+      </li>
+    </ul>
+
+    <p>
+      In conclusion, the fusion of active learning and collaborative robots in
+      e-Learning systems offers a promising avenue for enhanced, interactive,
+      and globally accessible education.
+    </p>
+    <!--  footer  -->
+    <footer>
+      <div class="footer-content">
+        <a href="contactus.html">Contact Us</a>
+        <a href="works-cited.html">Works Cited</a>
+      </div>
+    </footer>
+  </body>
+</html>
